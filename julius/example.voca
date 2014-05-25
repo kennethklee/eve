@@ -1,0 +1,21 @@
+% NS_B
+<s>           sil
+
+% NS_E
+</s>          sil
+
+% GREETING
+HEY           hh ey
+
+% WHOM
+COMPUTER      k ax m p y uw dx er
+
+% BAD_GREETING
+HI            hh ay
+HELLO         hh ax l ow
+HE            hh iy
+
+% BAD_WHOM
+COMPUTERS     k ax m p y uw dx er z
+
+
