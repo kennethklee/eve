@@ -24,6 +24,6 @@ build/Release
 # see https://npmjs.org/doc/faq.html#Should-I-check-my-node_modules-folder-into-git
 node_modules
 
-examples/example.dfa
-examples/example.dict
-examples/example.term
+julius/example.dfa
+julius/example.dict
+julius/example.term
