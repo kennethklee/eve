@@ -4,7 +4,7 @@ var Julius = require('julius-net'),
     Speakable = require('speakable');
 
 var triggerWords = ['<s>', 'HEY', 'COMPUTER', '</s>'],
-    threshold = 3.85;
+    threshold = 3.75;
 
 julius.on('recognitionSuccess', function(rec) {
     var sumCm = 0,
@@ -12,15 +12,17 @@ julius.on('recognitionSuccess', function(rec) {
 
     for (var i = 0; i < words.length; i++) {
         if (triggerWords[i] !== words[i]) {
+            console.log('not a match');
             return;
         }
         sumCm += rec[0].words[i].cm;
     }
     if (sumCm < threshold) {
+        console.log('not accurate enough', sumCm);
         return;
     }
     //console.log(words);
-    say.speak('Kathy', 'Yes sir?');
+    say.speak('Vicki', 'Yes bear?');
     //console.log(rec);
     //console.log(rec[0].words);
 });
