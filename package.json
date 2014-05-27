@@ -18,6 +18,7 @@
   "homepage": "https://github.com/kennethklee/eve",
   "dependencies": {
     "julius-net": "0.0.1",
-    "say": "^0.5.0"
+    "say": "^0.5.0",
+    "speakable": "^0.3.0"
   }
 }
